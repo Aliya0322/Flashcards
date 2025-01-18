@@ -82,7 +82,7 @@ const createCard = (questionText, answerText) => {
     const link = document.createElement("a");
     link.setAttribute("href", "#");
     link.setAttribute("class", "show-hide-btn");
-    link.innerHTML = "Show/Hide";
+    link.innerHTML = "Показать/Скрыть";
     link.addEventListener("click", () => {
         displayAnswer.classList.toggle("hide");
     });
