@@ -82,7 +82,7 @@ const createCard = (questionText, answerText) => {
     const link = document.createElement("a");
     link.setAttribute("href", "#");
     link.setAttribute("class", "show-hide-btn");
-    link.innerHTML = "Показать/Скрыть";
+    link.innerHTML = "Show/Hide";
     link.addEventListener("click", () => {
         displayAnswer.classList.toggle("hide");
     });
@@ -102,6 +102,7 @@ const createCard = (questionText, answerText) => {
         editBool = true;
         modifyElement(editButton, true);
         addQuestionCard.classList.remove("hide");
+        saveFlashcards();
     });
     buttonsCon.appendChild(editButton);
 
@@ -178,4 +179,6 @@ closeBtn.addEventListener("click", () => {
         cardButton.click();
     }
 });
+
+
 
